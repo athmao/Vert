@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="@android:color/white"
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/background_light"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +21,7 @@
             android:id="@+id/logo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/background_light"
+            android:layout_weight="0"
             android:fontFamily="@font/quicksand_medium"
             android:paddingBottom="40dp"
             android:paddingTop="140dp"
@@ -34,41 +34,52 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/white"
-            android:orientation="horizontal"
-            tools:background="@android:color/background_light">
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="120dp"
-                android:layout_height="30dp"
-                android:layout_weight="0"
-                android:background="@android:color/background_light"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="TextView"
                 android:textColor="@android:color/black"
-                android:textSize="18sp"
-                tools:text="Username:" />
+                tools:text="Username" />
 
             <EditText
-                android:id="@+id/zipcode"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/border"
-                android:elevation="100dp"
                 android:ems="10"
-                android:inputType="text"
-                android:padding="0dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:paddingStart="0dp"
-                android:selectAllOnFocus="false"
-                android:singleLine="true"
-                android:textAlignment="viewStart"
+                android:inputType="textPersonName"
+                android:background="@drawable/border"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
                 android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                tools:text="Password: "
+                />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:background="@drawable/border"/>
         </LinearLayout>
 
     </LinearLayout>
