@@ -50,7 +50,10 @@
                 android:paddingRight="0dp"
                 android:text="Username:"
                 android:textAlignment="textStart"
+                android:textAllCaps="false"
                 android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 tools:text="Username" />
 
             <EditText
@@ -83,6 +86,8 @@
                 android:text="Password:"
                 android:textAlignment="textStart"
                 android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 tools:text="Password: " />
 
             <EditText
