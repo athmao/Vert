@@ -87,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
                             tempResponse = response.getJSONArray("results").getJSONObject(0).getJSONObject("address_components").getString("city");
                             fullResults = response.getJSONArray("results");
                             getDistrictNumber = response.getJSONArray("results").getJSONObject(0).getJSONObject("fields").getJSONArray("congressional_districts").getJSONObject(0).getString("district_number");
-                            city = fullResults.getJSONObject(0).getJSONObject("address_components").getString("city");
                             state = fullResults.getJSONObject(0).getJSONObject("address_components").getString("state");
 
                         } catch (JSONException e) {
