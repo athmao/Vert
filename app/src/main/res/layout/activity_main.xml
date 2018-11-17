@@ -104,32 +104,32 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="60dp"
             android:layout_weight="0"
             android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:background="@color/myPurple"
-                android:text="Register"
-                tools:text="Register" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:layout_weight="1"
                 android:background="@color/myPurple"
                 android:text="Login"
                 tools:text="Login" />
+
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Enroll now"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark" />
+
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
