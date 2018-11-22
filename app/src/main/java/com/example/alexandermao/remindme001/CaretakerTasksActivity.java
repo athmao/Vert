@@ -1,7 +1,13 @@
 package com.example.alexandermao.remindme001;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import java.util.HashMap;
 
@@ -15,19 +21,21 @@ import java.util.HashMap;
 
 
  */
-public class CaretakerTasksActivity extends AppCompatActivity {
+public class CaretakerTasksActivity extends Fragment {
 
     private Caretaker caretaker;
     private HashMap<String, Patient> patients;
     private HashMap<String, Caretaker> caretakers;
-    public CaretakerTasksActivity(Caretaker caretaker, HashMap<String, Patient> patients, HashMap<String, Caretaker> caretakers) {
-        this.caretaker = caretaker;
-        this.patients = patients;
-        this.caretakers = caretakers;
+    private View view;
+
+    public CaretakerTasksActivity() {
+
     }
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_caretaker_tasks);
+        view = inflater.inflate(R.layout.activity_caretaker_tasks, container, false);
+        return view;
     }
 }

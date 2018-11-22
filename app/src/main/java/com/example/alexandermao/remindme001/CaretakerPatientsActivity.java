@@ -1,7 +1,13 @@
 package com.example.alexandermao.remindme001;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import java.util.HashMap;
 
@@ -12,20 +18,18 @@ import java.util.HashMap;
     3. Clicking add patient should allow you to choose from database of patients, and add patient to chartaker's patient hashmap
 
  */
-public class CaretakerPatientsActivity extends AppCompatActivity {
+public class CaretakerPatientsActivity extends Fragment {
 
     private Caretaker caretaker;
     private HashMap<String, Patient> patients;
     private HashMap<String, Caretaker> caretakers;
+    private View view;
 
-    public CaretakerPatientsActivity(Caretaker caretaker, HashMap<String, Patient> patients, HashMap<String, Caretaker> caretakers) {
-        this.caretaker = caretaker;
-        this.patients = patients;
-        this.caretakers = caretakers;
-    }
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_caretaker_patients);
+        view = inflater.inflate(R.layout.activity_caretaker_tasks, container, false);
+        return view;
     }
 }
