@@ -1,5 +1,6 @@
 package com.example.alexandermao.remindme001;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -19,11 +20,19 @@ public class CaretakerActivity extends AppCompatActivity{
     private Caretaker caretaker;
     private HashMap<String, Patient> patients;
     private HashMap<String, Caretaker> caretakers;
-    public CaretakerActivity(Caretaker caretaker, HashMap<String, Patient> patients, HashMap<String, Caretaker> caretakers) {
-        this.caretaker = caretaker;
-        this.patients = patients;
-        this.caretakers = caretakers;
+
+    public CaretakerActivity() {
+        /*Intent intent = getIntent();
+        this.patients = (HashMap<String, Patient>) intent.getSerializableExtra("PATIENTS");
+        this.caretakers = (HashMap<String, Caretaker>) intent.getSerializableExtra("CARETAKERS");
+        this.caretaker = (Caretaker) intent.getSerializableExtra("CARETAKER");*/
+        //NavUtils.navigateUpFromSameTask(this);
+        GlobalVars v = GlobalVars.getSingleInstance();
+        this.patients = v.getPatients();
+        this.caretakers = v.getCaretakers();
+
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

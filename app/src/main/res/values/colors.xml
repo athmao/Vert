@@ -6,4 +6,6 @@
     <color type="color" name="myRed">#ff3939</color>
     <color type="color" name="myWhite">#fffffc</color>
     <color type="color" name="myPurple">#5cdf97</color>
+    <color type="color" name="myGray">#ff8189</color>
+
 </resources>

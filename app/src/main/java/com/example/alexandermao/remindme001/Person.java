@@ -1,9 +1,10 @@
 package com.example.alexandermao.remindme001;
 
+import java.io.Serializable;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Person {
+public class Person implements Serializable{
 
     private String name;
     private URL profileImageURL;
