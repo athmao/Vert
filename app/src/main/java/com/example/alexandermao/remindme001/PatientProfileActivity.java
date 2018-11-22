@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
     2. Should have an edit button which takes you to EditPatientProfileActivity
  */
 public class PatientProfileActivity extends AppCompatActivity {
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

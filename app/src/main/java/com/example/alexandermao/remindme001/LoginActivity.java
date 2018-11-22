@@ -59,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CaretakerActivity.class);
         if (userVer.containsKey(this.username.getText().toString())) {
             if (userVer.get(this.username.getText().toString()).equals(this.password.getText().toString())) {
+                v.setCurrentlyLoggedIn(this.userToCare.get(this.username.getText().toString()));
                 startActivity(intent);
             } else {
                 Toast toast = Toast.makeText(getApplicationContext(),

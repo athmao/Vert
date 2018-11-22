@@ -7,5 +7,6 @@
     <color type="color" name="myWhite">#fffffc</color>
     <color type="color" name="myPurple">#6cefa7</color>
     <color type="color" name="myGray">#ff8189</color>
+    <color name="myGreen">#cdffe3</color>
 
 </resources>

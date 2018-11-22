@@ -13,17 +13,14 @@ public class Patient extends Person {
     private String notes;
     private String gender;
 
-    public Patient(String name, String email, String phonenumber, String profileImageURLString,
-                   Date birthday, String notes, String gender, ArrayList<Caretaker> caretakers) {
-        super(name, email, phonenumber, profileImageURLString);
+    public Patient(String name, String email, String phonenumber,
+                   Date birthday, String notes, String gender) {
+        super(name, email, phonenumber);
         this.birthday = birthday;
         this.notes = notes;
         this.gender = gender;
         this.caretakers = new HashMap<>();
         this.tasks = new PriorityQueue<>();
-        for (Caretaker c: caretakers) {
-            this.caretakers.put(c.getName(), c);
-        }
     }
 
     public HashMap<String, Caretaker> getCaretakers() {

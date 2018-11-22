@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /* This activity is part of the tablayout
@@ -27,15 +28,20 @@ public class CaretakerTasksActivity extends Fragment {
     private HashMap<String, Patient> patients;
     private HashMap<String, Caretaker> caretakers;
     private View view;
+    private ArrayList tasks = new ArrayList();
+    private GlobalVars v;
 
-    public CaretakerTasksActivity() {
-
-    }
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         view = inflater.inflate(R.layout.activity_caretaker_tasks, container, false);
+        tasks = new ArrayList();
+        v = GlobalVars.getSingleInstance();
+        this.caretakers = v.getCaretakers();
+        this.patients = v.getPatients();
+
+
         return view;
     }
 }

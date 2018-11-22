@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.TabLayout;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.HashMap;
 
@@ -28,13 +30,15 @@ public class CaretakerActivity extends AppCompatActivity{
     private TabLayout tabLayout;
     private AppBarLayout appBarLayout;
     private ViewPager viewPager;
+    private GlobalVars v;
+    private Button logout;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caretaker);
-        GlobalVars v = GlobalVars.getSingleInstance();
+        v = GlobalVars.getSingleInstance();
         this.patients = v.getPatients();
         this.caretakers = v.getCaretakers();
 
@@ -43,12 +47,24 @@ public class CaretakerActivity extends AppCompatActivity{
         viewPager = (ViewPager) findViewById(R.id.viewpager);
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.AddFragment(new CaretakerTasksActivity(), "Time");
-        adapter.AddFragment(new CaretakerTasksActivity(), "Convert");
+        adapter.AddFragment(new CaretakerTasksActivity(), "Tasks");
+        adapter.AddFragment(new CaretakerPatientsActivity(), "Patients");
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
+        logout = findViewById(R.id.logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                logout();
+
+            }
+        });
+
+    }
+    public void logout() {
+        NavUtils.navigateUpFromSameTask(this);
     }
 
 
