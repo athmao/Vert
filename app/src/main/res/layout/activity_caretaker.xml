@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/mainframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            app:elevation="0dp"
+            android:background="@color/myPurple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="0"
+                    android:background="@color/myGray"
+                    android:capitalize="none"
+                    android:text="Logout"
+                    android:textColor="@color/myWhite"
+                    tools:text="Logout" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:paddingLeft="65dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="0dp"
+                    android:text="RemindMe"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/myWhite"
+                    android:textSize="20sp"
+                    tools:text="RemindMe" />
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:background="@color/myPurple"
+
+            app:tabIndicatorColor="@color/myWhite"
+            app:tabSelectedTextColor="@color/myWhite"
+            app:tabTextColor="@color/myWhite">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tasktab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tasks" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/patienttab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patients" />
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/myWhite"
+            android:id="@+id/viewpager">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

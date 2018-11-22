@@ -2,10 +2,12 @@ package com.example.alexandermao.remindme001;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.TabLayout;
+import android.view.MenuItem;
 
 import java.util.HashMap;
 
@@ -46,5 +48,8 @@ public class CaretakerActivity extends AppCompatActivity{
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+
     }
+
+
 }
