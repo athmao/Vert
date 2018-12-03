@@ -29,16 +29,16 @@
 
                 <Button
                     android:id="@+id/logout"
-                    android:layout_width="60dp"
+                    android:layout_width="70dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="12dp"
                     android:layout_marginTop="14dp"
                     android:layout_weight="0"
-                    android:background="@color/myGray"
-                    android:capitalize="none"
+                    android:background="@drawable/rounded2"
                     android:text="Logout"
                     android:textColor="@color/myWhite"
-                    tools:text="Logout" />
+                    tools:text="Logout"
+                    android:stateListAnimator="@drawable/buttonelev"/>
 
                 <TextView
                     android:id="@+id/textView2"
@@ -47,7 +47,7 @@
                     android:layout_marginTop="14dp"
                     android:layout_weight="5"
                     android:fontFamily="@font/quicksand_bold"
-                    android:paddingLeft="65dp"
+                    android:paddingLeft="70dp"
                     android:paddingRight="0dp"
                     android:paddingTop="0dp"
                     android:text="RemindMe"
@@ -55,6 +55,18 @@
                     android:textColor="@color/myWhite"
                     android:textSize="20sp"
                     tools:text="RemindMe" />
+
+                <ImageView
+                    android:id="@+id/refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="0"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:paddingTop="10dp"
+                    app:srcCompat="@drawable/baseline_refresh_white_18dp" />
             </LinearLayout>
 
         </android.support.design.widget.AppBarLayout>
@@ -63,10 +75,10 @@
             android:id="@+id/tablayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="visible"
             android:background="@color/myPurple"
+            android:visibility="visible"
 
-            app:tabIndicatorColor="@color/myWhite"
+            app:tabIndicatorColor="#a0e3cd"
             app:tabSelectedTextColor="@color/myWhite"
             app:tabTextColor="@color/myWhite">
 

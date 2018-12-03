@@ -2,6 +2,8 @@ package com.example.alexandermao.remindme001;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +12,7 @@ import android.support.design.widget.TabLayout;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import java.util.HashMap;
 
@@ -24,31 +27,31 @@ import java.util.HashMap;
 */
 public class CaretakerActivity extends AppCompatActivity{
 
-    private Caretaker caretaker;
-    private HashMap<String, Patient> patients;
-    private HashMap<String, Caretaker> caretakers;
+
     private TabLayout tabLayout;
-    private AppBarLayout appBarLayout;
     private ViewPager viewPager;
-    private GlobalVars v;
     private Button logout;
+    private ImageView refresh;
+    private Bundle s;
+    private CaretakerTasksActivity tasks;
+    private CaretakerPatientsActivity patients;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        s = savedInstanceState;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caretaker);
-        v = GlobalVars.getSingleInstance();
-        this.patients = v.getPatients();
-        this.caretakers = v.getCaretakers();
+
 
         tabLayout = (TabLayout) findViewById(R.id.tablayout);
-        appBarLayout = (AppBarLayout) findViewById(R.id.appbar);
         viewPager = (ViewPager) findViewById(R.id.viewpager);
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.AddFragment(new CaretakerTasksActivity(), "Tasks");
-        adapter.AddFragment(new CaretakerPatientsActivity(), "Patients");
+        tasks = new CaretakerTasksActivity();
+        patients = new CaretakerPatientsActivity();
+        adapter.AddFragment(tasks, "Tasks");
+        adapter.AddFragment(patients, "Patients");
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
@@ -58,14 +61,25 @@ public class CaretakerActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 logout();
-
             }
         });
+
+        refresh = findViewById(R.id.refresh);
+        refresh.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                refresh();
+            }
+        });
+
 
     }
     public void logout() {
         NavUtils.navigateUpFromSameTask(this);
     }
 
-
+    public void refresh() {
+        this.patients.refresh();
+        this.tasks.refresh();
+    }
 }

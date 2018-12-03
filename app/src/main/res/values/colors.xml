@@ -5,8 +5,15 @@
     <color name="colorAccent">#FF4081</color>
     <color type="color" name="myRed">#ff3939</color>
     <color type="color" name="myWhite">#fffffc</color>
-    <color type="color" name="myPurple">#6cefa7</color>
-    <color type="color" name="myGray">#ff8189</color>
-    <color name="myGreen">#cdffe3</color>
+    <color type="color" name="myPurple">#ef07bdab</color>\
+    <color type="color" name="myGray">#ff8286</color>
+    <color type="color" name="myPurple2">#d213ccba</color>\
+    <color type="color" name="myPurple3">#efb6e1dc</color>\
+    <color type="color" name="myGray2">#ffe5e6</color>
+    <color type="color" name="black_semi_transparent">#b2000000</color>
+    <color type="color" name="white_pressed">#f1f1f1</color>
+    <color type="color" name="myBlue">#81a7e1</color>
+
+
 
 </resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.alexandermao.remindme001">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,7 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".GlobalVars">
+        android:name=".GlobalVars"
+        android:usesCleartextTraffic="true"
+
+        >
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,19 +24,45 @@
         </activity>
 
         <activity android:name=".LoginActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan">
 
         </activity>
 
         <activity android:name=".RegisterActivity"
-            android:parentActivityName=".LoginActivity">
+            android:parentActivityName=".LoginActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan">
 
         </activity>
 
         <activity android:name=".CaretakerActivity"
-            android:parentActivityName=".LoginActivity">
+            android:parentActivityName=".LoginActivity"
+            >
 
         </activity>
+
+        <activity android:name=".PatientsActivity"
+            android:parentActivityName=".CaretakerActivity">
+        </activity>
+
+        <activity android:name=".AddExistingPatientActivity"
+            android:parentActivityName=".CaretakerActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan">
+        </activity>
+
+        <activity android:name=".AddNewPatientActivity"
+            android:parentActivityName=".CaretakerActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan">
+        </activity>
+
+        <activity android:name=".NewTaskActivity"
+            android:parentActivityName=".PatientsActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan">
+
+        </activity>
+
+        <activity android:name=".TaskViewActivity"
+            android:parentActivityName=".PatientsActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

@@ -1,28 +1,38 @@
 package com.example.alexandermao.remindme001;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
-
-    private HashMap<String, Patient> patients;
-    private HashMap<String, Caretaker> caretakers;
-    private HashMap<String, String> userVer;
-    private HashMap<String, Caretaker> userToCare;
-    private GlobalVars v;
 
     private EditText username;
     private EditText password;
     private Button loginButton;
     private TextView registerButton;
+    private String serverURL = "http://54.67.72.192/";
+    private String loginSuffix = "login?username=%1$s&password=%2$s";
+    private GlobalVars globalVars;
 
 
     @Override
@@ -30,23 +40,19 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
-        v = GlobalVars.getSingleInstance();
-        this.patients = v.getPatients();
-        this.caretakers = v.getCaretakers();
-        this.userVer = v.getUserVer();
-        this.userToCare = v.getUserToCare();
+        this.globalVars = GlobalVars.getSingleInstance();
 
         this.username = findViewById(R.id.usernametext);
         this.password = findViewById(R.id.passwordtext);
         this.loginButton = findViewById(R.id.loginbutton);
+        this.registerButton = findViewById(R.id.registerbutton);
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 loginAccount();
             }
         });
-        this.registerButton = findViewById(R.id.registerbutton);
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,31 +62,50 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginAccount() {
-        Intent intent = new Intent(this, CaretakerActivity.class);
-        if (userVer.containsKey(this.username.getText().toString())) {
-            if (userVer.get(this.username.getText().toString()).equals(this.password.getText().toString())) {
-                v.setCurrentlyLoggedIn(this.userToCare.get(this.username.getText().toString()));
-                startActivity(intent);
-            } else {
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Password is Incorrect",
-                        Toast.LENGTH_SHORT);
+        String loginURL = String.format(serverURL + loginSuffix, username.getText().toString(), password.getText().toString());
 
-                toast.show();
+        RequestQueue queue = Volley.newRequestQueue(this);
+        JsonObjectRequest loginJSON = new JsonObjectRequest(Request.Method.GET, loginURL, new JSONObject(),
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        // Display the first 500 characters of the response string.
+                        try {
+                            response.get("success");
+                            globalVars.setUser(username.getText().toString());
+                            proceed();
+                        } catch(JSONException error) {
+                            AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                            builder.setMessage("Incorrect username or password!");
+                            builder.setTitle("Please try again");
+                            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.dismiss();
+                                }
+                            });
+                            AlertDialog dialog = builder.create();
+                            dialog.show();
+                            return;
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                System.out.println(error);
             }
-        } else {
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    "User does not exist",
-                    Toast.LENGTH_SHORT);
+        });
 
-            toast.show();
-        }
+        // Add the request to the RequestQueue.
+        queue.add(loginJSON);
 
     }
 
+    private void proceed() {
+        Intent intent = new Intent(this, CaretakerActivity.class);
+        startActivity(intent);
+    }
+
     private void registerAccount() {
-
-
         Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
