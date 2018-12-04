@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
+        <TextView
             android:id="@+id/taskname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
             android:paddingTop="30dp">
 
             <Button
-                android:id="@+id/deletebutton"
+                android:id="@+id/cancelbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
@@ -128,23 +128,11 @@
                 android:layout_weight="1"
                 android:background="@color/myGray"
                 android:stateListAnimator="@drawable/buttonelev"
-                android:text="Delete"
-                tools:text="Delete" />
+                android:text="Cancel"
+                tools:text="Cancel" />
 
             <Button
-                android:id="@+id/editButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:background="@color/myBlue"
-                android:stateListAnimator="@drawable/buttonelev"
-                android:text="Edit"
-                tools:text="Edit" />
-
-            <Button
-                android:id="@+id/cancelbutton"
+                android:id="@+id/donebutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -152,23 +140,10 @@
                 android:layout_weight="1"
                 android:background="@android:color/darker_gray"
                 android:stateListAnimator="@drawable/buttonelev"
-                android:text="Cancel"
-                tools:text="Cancel" />
+                android:text="Done"
+                tools:text="Done" />
 
         </LinearLayout>
-
-        <Button
-            android:id="@+id/donebutton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="12dp"
-            android:layout_weight="0"
-            android:background="@color/myPurple"
-            android:stateListAnimator="@drawable/buttonelev"
-            android:text="Complete"
-            tools:text="Complete" />
 
 
     </LinearLayout>

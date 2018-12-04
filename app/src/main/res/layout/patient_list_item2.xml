@@ -15,18 +15,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="31dp"
-            android:adjustViewBounds="true"
-            android:cropToPadding="true"
-            android:visibility="visible"
-            app:srcCompat="@drawable/baseline_add_black_18dp" />
-
         <TextView
             android:id="@+id/patientname"
             android:layout_width="match_parent"

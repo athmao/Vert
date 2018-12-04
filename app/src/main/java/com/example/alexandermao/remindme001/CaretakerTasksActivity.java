@@ -110,9 +110,11 @@ public class CaretakerTasksActivity extends Fragment {
             for (int i = 0; i < patientsJSON.length(); i++) {
                 try {
                     JSONObject p = (JSONObject) patientsJSON.get(i);
+                    String patient = p.getJSONObject("profile").getString("name");
                     JSONArray pn = p.getJSONArray("tasks");
                     for (int j = 0; j < pn.length(); j++) {
-                        tasks.add((JSONObject)pn.get(j));
+                        JSONObject task = pn.getJSONObject(j).put("patient", patient);
+                        tasks.add(task);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -146,7 +148,7 @@ public class CaretakerTasksActivity extends Fragment {
             convertView = getLayoutInflater().inflate(R.layout.patient_list_item, null);
             TextView pname = (TextView) convertView.findViewById(R.id.patientname);
             try {
-                pname.setText(tasks.get(position).getString("name"));
+                pname.setText("["+tasks.get(position).getString("patient") + "]\t" + tasks.get(position).getString("name"));
             } catch (JSONException e) {
                 e.printStackTrace();
             }

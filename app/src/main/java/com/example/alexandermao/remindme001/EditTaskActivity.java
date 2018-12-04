@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -15,6 +16,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public class EditTaskActivity extends AppCompatActivity{
@@ -25,7 +27,7 @@ public class EditTaskActivity extends AppCompatActivity{
     private String serverURL = "http://54.67.72.192/";
     private String newTaskURLSuffix = "update_task?patient=%1$s&item_name=%2$s&due_date=%3$s&notes=%4$s&caretakers=%5$s";
 
-    private EditText name;
+    private TextView name;
     private EditText due;
     private EditText notes;
 
@@ -37,10 +39,21 @@ public class EditTaskActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_task);
+        Bundle b = getIntent().getExtras();
 
-        this.name = findViewById(R.id.nametext);
-        this.due = findViewById(R.id.duetext);
-        this.notes = findViewById(R.id.notestext);
+
+        this.name = findViewById(R.id.taskname);
+        this.due = findViewById(R.id.duelabel2);
+        this.notes = findViewById(R.id.noteslabel2);
+
+        try {
+            JSONObject task = new JSONObject(b.getString("task"));
+            name.setText(task.getString("name"));
+            due.setText(task.getString("due"));
+            notes.setText(task.getString("notes"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
         this.cancel = findViewById(R.id.cancelbutton);
         this.submit = findViewById(R.id.donebutton);
@@ -87,6 +100,7 @@ public class EditTaskActivity extends AppCompatActivity{
             @Override
             public void onErrorResponse(VolleyError error) {
                 System.out.println(error);
+                System.out.println("ERROR HERE");
             }
         });
 

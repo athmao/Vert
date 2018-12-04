@@ -139,7 +139,11 @@ public class TaskViewActivity extends AppCompatActivity{
     }
     public void editTask() {
         //editTask()
-        //todo
+        Intent intent = new Intent(this, EditTaskActivity.class);
+        Bundle b = new Bundle();
+        b.putString("task", task.toString());
+        intent.putExtras(b);
+        startActivity(intent);
     }
 
     public void cancel() {
