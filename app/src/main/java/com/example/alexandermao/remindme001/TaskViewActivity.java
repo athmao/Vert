@@ -138,6 +138,7 @@ public class TaskViewActivity extends AppCompatActivity{
         queue.add(patientsJSON);
     }
     public void editTask() {
+        //editTask()
         //todo
     }
 

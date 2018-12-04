@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:design-animation-28.0.0-alpha1">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-animation-28.0.0-alpha1.aar/071dbaca01cb83d6ee2778538663cef6/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-animation-28.0.0-alpha1.aar/071dbaca01cb83d6ee2778538663cef6/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-animation-28.0.0-alpha1.aar/5e9cbc8cd85196f1ea1b65cd033be25d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-animation-28.0.0-alpha1.aar/5e9cbc8cd85196f1ea1b65cd033be25d/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

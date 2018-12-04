@@ -61,6 +61,12 @@
 
         </activity>
 
+        <activity android:name=".EditPatientProfileActivity"
+            android:parentActivityName=".PatientsActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan">
+
+        </activity>
+
         <activity android:name=".TaskViewActivity"
             android:parentActivityName=".PatientsActivity"></activity>
 

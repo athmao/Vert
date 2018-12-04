@@ -1,6 +1,245 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingRight="0dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/genderLabel"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Gender: "
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Gender: " />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingRight="0dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/ageLabel"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Age: "
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Age: " />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingRight="0dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/eLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Emergency Contact:"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Emergency Contact:" />
+
+            <TextView
+                android:id="@+id/eName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingRight="0dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/ePhoneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Emergency Contact Phone:"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Emergency Contact Phone:" />
+
+            <TextView
+                android:id="@+id/ePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingRight="0dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/noteslabel"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Notes: "
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Notes: " />
+
+            <TextView
+                android:id="@+id/notes"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/editPatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/myBlue"
+                android:stateListAnimator="@drawable/buttonelev"
+                android:text="Edit"
+                tools:text="Edit" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
