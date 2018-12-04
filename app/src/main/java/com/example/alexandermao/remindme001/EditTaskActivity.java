@@ -1,5 +1,6 @@
 package com.example.alexandermao.remindme001;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
@@ -33,6 +34,7 @@ public class EditTaskActivity extends AppCompatActivity{
 
     private Button cancel;
     private Button submit;
+    private JSONObject task;
 
 
     @Override
@@ -47,7 +49,7 @@ public class EditTaskActivity extends AppCompatActivity{
         this.notes = findViewById(R.id.noteslabel2);
 
         try {
-            JSONObject task = new JSONObject(b.getString("task"));
+            task = new JSONObject(b.getString("task"));
             name.setText(task.getString("name"));
             due.setText(task.getString("due"));
             notes.setText(task.getString("notes"));
@@ -93,6 +95,13 @@ public class EditTaskActivity extends AppCompatActivity{
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
+                        try {
+                            task.put("name", name.getText().toString());
+                            task.put("due", due.getText().toString());
+                            task.put("notes", notes.getText().toString());
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                         proceed();
 
                     }
@@ -113,7 +122,7 @@ public class EditTaskActivity extends AppCompatActivity{
                 Toast.LENGTH_SHORT);
 
         toast.show();
-
+        globalVars.setTask(task);
         NavUtils.navigateUpFromSameTask(this);
     }
 }

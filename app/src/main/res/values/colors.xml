@@ -13,7 +13,7 @@
     <color type="color" name="black_semi_transparent">#b2000000</color>
     <color type="color" name="white_pressed">#f1f1f1</color>
     <color type="color" name="myBlue">#81a7e1</color>
-
+    <color name="textgray">#ef424242</color>
 
 
 </resources>

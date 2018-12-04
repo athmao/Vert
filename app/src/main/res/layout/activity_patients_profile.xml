@@ -13,14 +13,16 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:paddingRight="0dp"
             android:paddingTop="20dp">
 
@@ -32,26 +34,26 @@
                 android:layout_weight="0"
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
-                android:text="Gender: "
+                android:text="Gender"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="@color/myPurple"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                tools:text="Gender: " />
+                tools:text="Gender" />
 
             <TextView
                 android:id="@+id/gender"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="30dp"
                 android:layout_weight="0"
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
-                android:textColor="@color/myPurple"
-                android:textSize="16sp"
+                android:textColor="@color/textgray"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 android:typeface="normal" />
 
@@ -62,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:paddingRight="0dp"
             android:paddingTop="20dp">
 
@@ -74,26 +76,26 @@
                 android:layout_weight="0"
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
-                android:text="Age: "
+                android:text="Age"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="@color/myPurple"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                tools:text="Age: " />
+                tools:text="Age" />
 
             <TextView
                 android:id="@+id/age"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="30dp"
                 android:layout_weight="0"
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
-                android:textColor="@color/myPurple"
-                android:textSize="16sp"
+                android:textColor="@color/textgray"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -102,7 +104,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:paddingRight="0dp"
             android:paddingTop="20dp">
 
@@ -114,26 +116,26 @@
                 android:layout_weight="0"
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
-                android:text="Emergency Contact:"
+                android:text="Emergency Contact"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="@color/myPurple"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                tools:text="Emergency Contact:" />
+                tools:text="Emergency Contact" />
 
             <TextView
                 android:id="@+id/eName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="30dp"
                 android:layout_weight="0"
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
-                android:textColor="@color/myPurple"
-                android:textSize="16sp"
+                android:textColor="@color/textgray"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -142,7 +144,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:paddingRight="0dp"
             android:paddingTop="20dp">
 
@@ -154,26 +156,26 @@
                 android:layout_weight="0"
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
-                android:text="Emergency Contact Phone:"
+                android:text="Emergency Phone"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="@color/myPurple"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                tools:text="Emergency Contact Phone:" />
+                tools:text="Emergency Phone" />
 
             <TextView
                 android:id="@+id/ePhone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="30dp"
                 android:layout_weight="0"
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
-                android:textColor="@color/myPurple"
-                android:textSize="16sp"
+                android:textColor="@color/textgray"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -182,7 +184,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:paddingRight="0dp"
             android:paddingTop="20dp">
 
@@ -194,26 +196,26 @@
                 android:layout_weight="0"
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
-                android:text="Notes: "
+                android:text="Notes"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="@color/myPurple"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                tools:text="Notes: " />
+                tools:text="Notes" />
 
             <TextView
                 android:id="@+id/notes"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_marginStart="5dp"
+                android:layout_width="331dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="30dp"
                 android:layout_weight="0"
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
-                android:textColor="@color/myPurple"
-                android:textSize="16sp"
+                android:textColor="@color/textgray"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
         </LinearLayout>

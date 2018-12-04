@@ -44,7 +44,7 @@
 
             <TextView
                 android:id="@+id/namelabel"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_weight="0"
@@ -82,7 +82,7 @@
 
             <TextView
                 android:id="@+id/duelabel"
-                android:layout_width="100dp"
+                android:layout_width="87dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_weight="0"
@@ -121,7 +121,7 @@
 
             <TextView
                 android:id="@+id/noteslabel"
-                android:layout_width="100dp"
+                android:layout_width="87dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_weight="0"

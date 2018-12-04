@@ -42,7 +42,7 @@
 
             <TextView
                 android:id="@+id/namelabel"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_weight="0"
@@ -61,6 +61,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="30dp"
+                android:layout_marginStart="15dp"
                 android:layout_weight="1"
                 android:background="@drawable/border"
                 android:ems="10"
@@ -98,6 +99,7 @@
                 android:id="@+id/gendertext"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/border"
@@ -127,6 +129,7 @@
                 android:id="@+id/bdaytext"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
                 android:layout_marginEnd="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/border"
@@ -147,7 +150,7 @@
 
             <TextView
                 android:id="@+id/eclabel"
-                android:layout_width="160dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_weight="1"
@@ -165,6 +168,7 @@
                 android:id="@+id/ectext"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
                 android:layout_marginEnd="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/border"
@@ -184,7 +188,7 @@
 
             <TextView
                 android:id="@+id/phonenumberlabel"
-                android:layout_width="160dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_weight="1"
@@ -202,6 +206,7 @@
                 android:id="@+id/phonenumbertext"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
                 android:layout_marginEnd="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/border"
@@ -219,9 +224,10 @@
             android:orientation="horizontal"
             android:paddingRight="0dp"
             android:paddingTop="20dp">
+
             <TextView
                 android:id="@+id/noteslabel"
-                android:layout_width="70dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_weight="0"
@@ -238,6 +244,7 @@
             <EditText
                 android:id="@+id/notestext"
                 android:layout_width="180dp"
+                android:layout_marginStart="15dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="30dp"
                 android:layout_weight="1"

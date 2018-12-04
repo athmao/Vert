@@ -61,6 +61,16 @@ public class TaskViewActivity extends AppCompatActivity{
             notes.setText(task.getString("notes"));
         } catch (JSONException e) {
             e.printStackTrace();
+        } catch (NullPointerException e) {
+            try {
+                task = globalVars.getTask();
+                tasknameString = task.getString("name");
+                taskname.setText(tasknameString);
+                due.setText(task.getString("due"));
+                notes.setText(task.getString("notes"));
+            } catch (JSONException er) {
+                er.printStackTrace();
+            }
         }
 
         delete.setOnClickListener(new View.OnClickListener() {
