@@ -15,21 +15,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/EditTaskActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/EditTaskActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/GlobalVars.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/GlobalVars.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/TaskViewActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/TaskViewActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_new_patient.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_new_patient.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_patient_profile.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_patient_profile.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_task.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_task.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_task.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_new_task.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_patients_profile.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_patients_profile.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_task_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_task_view.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,17 +39,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="activity_task_view.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_task_view.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_task_view.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="175" column="44" lean-forward="true" selection-start-line="175" selection-start-column="44" selection-end-line="175" selection-end-column="44" />
+            <state relative-caret-position="315">
+              <caret line="152" column="19" lean-forward="false" selection-start-line="152" selection-start-column="19" selection-end-line="152" selection-end-column="19" />
               <folding>
                 <element signature="e#1430#1960#0" expanded="false" />
               </folding>
             </state>
           </provider>
           <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="78" column="37" lean-forward="false" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_login.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
         </entry>
@@ -109,7 +119,7 @@
       <file leaf-file-name="activity_patients_profile.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_patients_profile.xml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="3150">
               <caret line="210" column="16" lean-forward="false" selection-start-line="210" selection-start-column="16" selection-end-line="210" selection-end-column="49" />
               <folding />
             </state>
@@ -135,7 +145,7 @@
       <file leaf-file-name="TaskViewActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/TaskViewActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
+            <state relative-caret-position="615">
               <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
               <folding>
                 <element signature="e#5251#5252#0" expanded="true" />
@@ -148,41 +158,9 @@
       <file leaf-file-name="PatientTasksActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/PatientTasksActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
+            <state relative-caret-position="645">
               <caret line="69" column="33" lean-forward="false" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="33" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditTaskActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/EditTaskActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-              <folding>
-                <element signature="e#2465#2466#0" expanded="true" />
-                <element signature="e#2518#2519#0" expanded="true" />
-                <element signature="e#2934#3519#0" expanded="true" />
-                <element signature="e#3518#3519#0" expanded="true" />
-                <element signature="e#3521#3751#0" expanded="true" />
-                <element signature="e#3750#3751#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GlobalVars.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/GlobalVars.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-              <folding>
-                <element signature="e#606#607#0" expanded="true" />
-                <element signature="e#638#639#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -2243,7 +2221,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/CaretakerTasksActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_patients_profile.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_add_new_patient.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_new_task.xml" />
@@ -2253,6 +2230,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/GlobalVars.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/TaskViewActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_task_view.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
       </list>
     </option>
   </component>
@@ -2278,10 +2256,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2309,6 +2286,18 @@
               <item name="remindme" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="remindme" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="font" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="remindme" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
@@ -2319,12 +2308,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="device.picker.selection" value="Pixel_2_API_28_2" />
+    <property name="device.picker.selection" value="FA79F1A03731" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2502,8 +2492,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33217594" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33217594" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2515,8 +2505,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2540,12 +2530,6 @@
           <caret line="81" column="36" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="36" />
           <folding>
             <element signature="e#1430#1960#0" expanded="false" />
-            <element signature="e#2253#2877#0" expanded="false" />
-            <element signature="e#2891#3491#0" expanded="false" />
-            <element signature="e#3810#4440#0" expanded="false" />
-            <element signature="e#4454#5007#0" expanded="false" />
-            <element signature="e#5317#5810#0" expanded="false" />
-            <element signature="e#5824#6311#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2633,12 +2617,12 @@
         <state relative-caret-position="1155">
           <caret line="100" column="51" lean-forward="false" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
           <folding>
-            <element signature="e#2465#2466#0" expanded="true" />
-            <element signature="e#2518#2519#0" expanded="true" />
-            <element signature="e#2934#3519#0" expanded="true" />
-            <element signature="e#3518#3519#0" expanded="true" />
-            <element signature="e#3521#3751#0" expanded="true" />
-            <element signature="e#3750#3751#0" expanded="true" />
+            <element signature="e#2465#2466#0" expanded="false" />
+            <element signature="e#2518#2519#0" expanded="false" />
+            <element signature="e#2934#3519#0" expanded="false" />
+            <element signature="e#3518#3519#0" expanded="false" />
+            <element signature="e#3521#3751#0" expanded="false" />
+            <element signature="e#3750#3751#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2751,7 +2735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="4578" column="26" lean-forward="true" selection-start-line="4578" selection-start-column="26" selection-end-line="4578" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2848,25 +2831,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="98" column="29" lean-forward="false" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="131" column="17" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -2906,10 +2870,10 @@
         <state relative-caret-position="255">
           <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
           <folding>
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="false" />
+            <element signature="e#638#639#0" expanded="false" />
+            <element signature="e#673#674#0" expanded="false" />
+            <element signature="e#700#701#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2919,55 +2883,14 @@
         <state relative-caret-position="64">
           <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding>
-            <element signature="e#2465#2466#0" expanded="true" />
-            <element signature="e#2518#2519#0" expanded="true" />
-            <element signature="e#2934#3519#0" expanded="true" />
-            <element signature="e#3518#3519#0" expanded="true" />
-            <element signature="e#3521#3751#0" expanded="true" />
-            <element signature="e#3750#3751#0" expanded="true" />
+            <element signature="e#2465#2466#0" expanded="false" />
+            <element signature="e#2518#2519#0" expanded="false" />
+            <element signature="e#2934#3519#0" expanded="false" />
+            <element signature="e#3518#3519#0" expanded="false" />
+            <element signature="e#3521#3751#0" expanded="false" />
+            <element signature="e#3750#3751#0" expanded="false" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/PatientTasksActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="69" column="33" lean-forward="false" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/TaskViewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-          <folding>
-            <element signature="e#5251#5252#0" expanded="true" />
-            <element signature="e#5304#5305#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_add_new_patient.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="3690">
-          <caret line="246" column="16" lean-forward="false" selection-start-line="246" selection-start-column="16" selection-end-line="246" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_patients_profile.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="210" column="16" lean-forward="false" selection-start-line="210" selection-start-column="16" selection-end-line="210" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_task.xml">
@@ -2981,10 +2904,75 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_patients_profile.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="3150">
+          <caret line="210" column="16" lean-forward="false" selection-start-line="210" selection-start-column="16" selection-end-line="210" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_add_new_patient.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="3690">
+          <caret line="246" column="16" lean-forward="false" selection-start-line="246" selection-start-column="16" selection-end-line="246" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/TaskViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+          <folding>
+            <element signature="e#5251#5252#0" expanded="true" />
+            <element signature="e#5304#5305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/PatientTasksActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="69" column="33" lean-forward="false" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_new_task.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_task_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="152" column="19" lean-forward="false" selection-start-line="152" selection-start-column="19" selection-end-line="152" selection-end-column="19" />
+          <folding>
+            <element signature="e#1430#1960#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -3003,17 +2991,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_task_view.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/alexandermao/remindme001/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="175" column="44" lean-forward="true" selection-start-line="175" selection-start-column="44" selection-end-line="175" selection-end-column="44" />
-          <folding>
-            <element signature="e#1430#1960#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="334">
+          <caret line="78" column="37" lean-forward="false" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
   </component>
