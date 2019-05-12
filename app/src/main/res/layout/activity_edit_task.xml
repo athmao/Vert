@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/taskname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@color/myPurple"
+            android:fontFamily="@font/quicksand_medium"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:typeface="monospace" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingRight="0dp"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/duelabel"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Due:"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Due:" />
+
+            <EditText
+                android:id="@+id/duelabel2"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingRight="0dp"
+            android:paddingTop="20dp">
+            <TextView
+                android:id="@+id/noteslabel"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Notes:"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Notes:" />
+
+            <EditText
+                android:id="@+id/noteslabel2"
+                android:layout_width="250dp"
+                android:layout_height="280dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+            <Button
+                android:id="@+id/cancelbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/myGray"
+                android:stateListAnimator="@drawable/buttonelev"
+                android:text="Cancel"
+                tools:text="Cancel" />
+
+            <Button
+                android:id="@+id/donebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:stateListAnimator="@drawable/buttonelev"
+                android:text="Done"
+                tools:text="Done" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

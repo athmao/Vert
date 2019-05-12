@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/patientname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/rounded"
+            android:elevation="7dp"
+            android:fadingEdge="none|horizontal"
+            android:fontFamily="@font/quicksand_medium"
+            android:paddingBottom="24dp"
+            android:paddingTop="24dp"
+            android:text="PatientName"
+            android:textAlignment="center"
+            android:textColor="@color/myPurple"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <Button
+        android:id="@+id/cancelbutton"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0"
+        android:background="@drawable/rounded4"
+        android:stateListAnimator="@drawable/buttonelev"
+        android:text="Back"
+        android:textColor="@color/myWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Back" />
+
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/taskname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@color/myPurple"
+            android:fontFamily="@font/quicksand_medium"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:typeface="monospace" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:paddingRight="0dp"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/duelabel"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Due"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Due" />
+
+            <TextView
+                android:id="@+id/duelabel2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/textgray"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:paddingRight="0dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/noteslabel"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Notes"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/myPurple"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Notes" />
+
+            <TextView
+                android:id="@+id/noteslabel2"
+                android:layout_width="332dp"
+                android:layout_height="231dp"
+                android:layout_marginStart="30dp"
+                android:layout_weight="0"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/textgray"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+            <Button
+                android:id="@+id/deletebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/myGray"
+                android:stateListAnimator="@drawable/buttonelev"
+                android:text="Delete"
+                tools:text="Delete" />
+
+            <Button
+                android:id="@+id/editButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@color/myBlue"
+                android:stateListAnimator="@drawable/buttonelev"
+                android:text="Edit"
+                tools:text="Edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+            <Button
+                android:id="@+id/donebutton"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:layout_weight="0"
+                android:background="@color/myPurple"
+                android:stateListAnimator="@drawable/buttonelev"
+                android:text="Complete"
+                tools:text="Complete" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
